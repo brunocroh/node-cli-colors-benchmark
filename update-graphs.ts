@@ -33,7 +33,7 @@ const results = data.files
   .map((f) => {
     const results = f.groups.map(toResult)
 
-    return results.map(toGraph).join("\n")
+    return results.map((v) => toGraph(v)).join("\n")
   })
   .join("\n\n")
 
