@@ -1,0 +1,265 @@
+Performance Benchmark Results
+============================
+
+Statistics Summary:
+------------------
+
+validation:
+  Average: 0.144ms
+  Min: 0.113ms
+  Max: 0.446ms
+  Std Dev: 0.058ms
+  Variance: 3.36ms²
+  
+fetchAnsiCodes:
+  Average: 0.003ms
+  Min: 0.003ms
+  Max: 0.006ms
+  Std Dev: 0.001ms
+  Variance: 0.001ms²
+  
+parseAnsi/openCodes:
+  Average: 0.002ms
+  Min: 0.002ms
+  Max: 0.005ms
+  Std Dev: 0.001ms
+  Variance: 0.001ms²
+  
+parseAnsi/nestedStyles:
+  Average: 0.014ms
+  Min: 0.008ms
+  Max: 0.148ms
+  Std Dev: 0.024ms
+  Variance: 0.58ms²
+  
+parseAnsi/closeCodes:
+  Average: 0.016ms
+  Min: 0.006ms
+  Max: 0.271ms
+  Std Dev: 0.047ms
+  Variance: 2.21ms²
+  
+parseAnsi (total):
+  Average: 0.106ms
+  Min: 0.083ms
+  Max: 0.514ms
+  Std Dev: 0.075ms
+  Variance: 5.63ms²
+
+Output: [31m[43mfoo[49m[39m (red text with yellow background)
+Total runs: 30
+
+Note: First run shows significantly higher values (cold start effect)
+
+----
+
+validation: 0.446ms
+fetchAnsiCodes: 0.004ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.148ms
+parseAnsi/closeCodes: 0.271ms
+parseAnsi: 0.514ms
+[31m[43mfoo[49m[39m
+validation: 0.13ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.008ms
+parseAnsi: 0.099ms
+[31m[43mfoo[49m[39m
+validation: 0.132ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.009ms
+parseAnsi/closeCodes: 0.007ms
+parseAnsi: 0.092ms
+[31m[43mfoo[49m[39m
+validation: 0.133ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.008ms
+parseAnsi: 0.098ms
+[31m[43mfoo[49m[39m
+validation: 0.152ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.009ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.091ms
+[31m[43mfoo[49m[39m
+validation: 0.131ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.01ms
+parseAnsi/closeCodes: 0.008ms
+parseAnsi: 0.097ms
+[31m[43mfoo[49m[39m
+validation: 0.117ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.008ms
+parseAnsi/closeCodes: 0.007ms
+parseAnsi: 0.088ms
+[31m[43mfoo[49m[39m
+validation: 0.124ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.009ms
+parseAnsi/closeCodes: 0.01ms
+parseAnsi: 0.09ms
+[31m[43mfoo[49m[39m
+validation: 0.166ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.094ms
+[31m[43mfoo[49m[39m
+validation: 0.121ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.008ms
+parseAnsi: 0.098ms
+[31m[43mfoo[49m[39m
+validation: 0.131ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.012ms
+parseAnsi: 0.099ms
+[31m[43mfoo[49m[39m
+validation: 0.153ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.01ms
+parseAnsi/closeCodes: 0.007ms
+parseAnsi: 0.083ms
+[31m[43mfoo[49m[39m
+validation: 0.139ms
+fetchAnsiCodes: 0.004ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.01ms
+parseAnsi/closeCodes: 0.008ms
+parseAnsi: 0.1ms
+[31m[43mfoo[49m[39m
+validation: 0.133ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.023ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.144ms
+[31m[43mfoo[49m[39m
+validation: 0.124ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.01ms
+parseAnsi/closeCodes: 0.008ms
+parseAnsi: 0.096ms
+[31m[43mfoo[49m[39m
+validation: 0.17ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.012ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.11ms
+[31m[43mfoo[49m[39m
+validation: 0.142ms
+fetchAnsiCodes: 0.004ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.014ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.113ms
+[31m[43mfoo[49m[39m
+validation: 0.124ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.007ms
+parseAnsi: 0.088ms
+[31m[43mfoo[49m[39m
+validation: 0.159ms
+fetchAnsiCodes: 0.004ms
+parseAnsi/openCodes: 0.005ms
+parseAnsi/nestedStyles: 0.014ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.119ms
+[31m[43mfoo[49m[39m
+validation: 0.157ms
+fetchAnsiCodes: 0.004ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.01ms
+parseAnsi/closeCodes: 0.01ms
+parseAnsi: 0.101ms
+[31m[43mfoo[49m[39m
+validation: 0.155ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.019ms
+parseAnsi/closeCodes: 0.01ms
+parseAnsi: 0.106ms
+[31m[43mfoo[49m[39m
+validation: 0.149ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.009ms
+parseAnsi/closeCodes: 0.007ms
+parseAnsi: 0.102ms
+[31m[43mfoo[49m[39m
+validation: 0.116ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.008ms
+parseAnsi/closeCodes: 0.007ms
+parseAnsi: 0.108ms
+[31m[43mfoo[49m[39m
+validation: 0.142ms
+fetchAnsiCodes: 0.004ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.008ms
+parseAnsi: 0.109ms
+[31m[43mfoo[49m[39m
+validation: 0.128ms
+fetchAnsiCodes: 0.004ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.019ms
+parseAnsi/closeCodes: 0.008ms
+parseAnsi: 0.101ms
+[31m[43mfoo[49m[39m
+validation: 0.113ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.008ms
+parseAnsi/closeCodes: 0.006ms
+parseAnsi: 0.091ms
+[31m[43mfoo[49m[39m
+validation: 0.165ms
+fetchAnsiCodes: 0.006ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.022ms
+parseAnsi/closeCodes: 0.015ms
+parseAnsi: 0.124ms
+[31m[43mfoo[49m[39m
+validation: 0.154ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.01ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.104ms
+[31m[43mfoo[49m[39m
+validation: 0.146ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.111ms
+[31m[43mfoo[49m[39m
+validation: 0.138ms
+fetchAnsiCodes: 0.003ms
+parseAnsi/openCodes: 0.002ms
+parseAnsi/nestedStyles: 0.011ms
+parseAnsi/closeCodes: 0.009ms
+parseAnsi: 0.094ms
+[31m[43mfoo[49m[39m
