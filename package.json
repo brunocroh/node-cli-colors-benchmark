@@ -20,7 +20,9 @@
   },
   "scripts": {
     "bench": "vitest bench",
-    "bench-node": "../node/node ./node_modules/bench-node/lib/index.js --allow-natives-syntax src/bench-node.mjs",
+    "bench-node-simple": "../node/node ./node_modules/bench-node/lib/index.js --allow-natives-syntax src/bench-node-simple.mjs",
+    "bench-node-2": "../node/node ./node_modules/bench-node/lib/index.js --allow-natives-syntax src/bench-node-2.mjs",
+    "bench-node-complex": "../node/node ./node_modules/bench-node/lib/index.js --allow-natives-syntax src/bench-node-complex.mjs",
     "dev": "tsup --watch",
     "lint": "oxlint -D pedantic -D correctness -A no-undef -A no-unresolved",
     "typecheck": "tsc --noEmit --project tsconfig.json",
